@@ -4,7 +4,7 @@
 
 ![Flowcase](https://img.shields.io/badge/Status-Development-yellow)
 ![License](https://img.shields.io/badge/license-MIT-blue)
-![Docker](https://img.shields.io/badge/Docker-Required-blue)
+![Podman](https://img.shields.io/badge/Podman-required-blue)
 
 **A cutting-edge open-source container streaming platform**
 
@@ -15,7 +15,7 @@
 
 ## What is Flowcase?
 
-**Flowcase** is a free and completely open-source alternative to Kasm Workspaces, enabling secure container streaming for your applications. Stream desktop applications, development environments, and more through your web browser using Docker containers.
+**Flowcase** is a free and completely open-source alternative to Kasm Workspaces, enabling secure container streaming for your applications. Stream desktop applications, development environments, and more through your web browser using Podman containers.
 
 ## Features
 
@@ -23,7 +23,7 @@
 
 | Open-Source | Secure Streaming | User-Friendly | Customizable | Multi-Platform |
 |:-------------:|:------------------:|:----------------:|:--------------:|:--------------:|
-| Completely free and community-driven | Stream applications securely using Docker | Easy to deploy and manage | Supports customization for various use cases | Supports Windows, Linux, and macOS |
+| Completely free and community-driven | Stream applications securely using Podman | Easy to deploy and manage | Supports customization for various use cases | Supports Windows, Linux, and macOS |
 
 </div>
 
@@ -84,7 +84,7 @@ Before installing Flowcase, ensure you have:
 - **Podman** (rootful, version 4.x or later)
   - [Install Podman](https://podman.io/docs/installation)
   - Verify: `podman --version`
-  - Enable the Docker-compatible API socket: `sudo systemctl enable --now podman.socket`
+  - Enable the Podman-compatible API socket: `sudo systemctl enable --now podman.socket`
 
 - **Podman Compose** (`podman compose` plugin, or `podman-compose`)
   - Verify: `podman compose version`
@@ -97,8 +97,8 @@ Before installing Flowcase, ensure you have:
   - Network access for downloading images
 
 - **Permissions:**
-  - Linux/Mac: User in `docker` group or `sudo` access
-  - Windows: Docker Desktop running with WSL2
+  - Linux/Mac: User in `podman`/`docker` group or `sudo` access
+  - Windows: Podman Desktop running with WSL2
 
 ## Documentation
 
